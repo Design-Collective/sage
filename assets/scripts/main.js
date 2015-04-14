@@ -23,6 +23,13 @@
     'common': {
       init: function() {
         // JavaScript to be fired on all pages
+
+        // Init Bootstrap Select
+        // dc_initSelectPicker();
+
+        // Init Slick Slider
+        // dc_initSlick();
+
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
@@ -38,11 +45,12 @@
       }
     },
     // About us page, note the change from about-us to about_us.
-    'about_us': {
+    /* 'about_us': {
       init: function() {
         // JavaScript to be fired on the about us page
       }
-    }
+    }, */
+    resizeTimer: false
   };
 
   // The routing fires all common scripts, followed by the page specific scripts.
@@ -60,7 +68,10 @@
         namespace[func][funcname](args);
       }
     },
-    loadEvents: function() {
+    readyEvents: function() {
+      
+      console.log("Ready");
+
       // Fire common init JS
       UTIL.fire('common');
 
@@ -72,10 +83,66 @@
 
       // Fire common finalize JS
       UTIL.fire('common', 'finalize');
+    },
+    loadEvents: function() {
+      console.log("Load");
+    },
+    resize: function() {
+      clearTimeout(Roots.resizeTimer);
+      // Roots.resizeTimer = setTimeout(callOnResize, 250);
     }
   };
 
   // Load Events
-  $(document).ready(UTIL.loadEvents);
+  $(document).ready(UTIL.readyEvents);
+  $(window).load(UTIL.loadEvents);
+  $(window).resize(UTIL.resize);
+
+  // Init nice select boxes
+  function dc_initSelectPicker() {
+    if($("select").length) {
+      $('select').addClass("nice-select");
+      $('.nice-select').selectpicker();
+    }
+  }
+
+  // Slick carousel init
+
+  function dc_initSlick() {
+    myfade = true;
+    if($(window).width() < 768) {
+      myfade = false;
+    }
+
+    if($(".slider").length) {
+      $(".slider").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        asNavFor: '.thumbnails',
+        dots: false,
+        fade: myfade,
+        autoplay: true,
+        autoplaySpeed: 8000,
+        pauseOnHover: true
+        // infinite: false
+      });
+    }
+
+    if($(".thumbnails").length) {
+      $(".thumbnails").slick({
+        slidesToShow: 5,
+        slidesToScroll: 5,
+        asNavFor: '.slider',
+        dots: false,
+        arrows: true,
+        // centerMode: true,
+        focusOnSelect: true,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        pauseOnHover: false
+        // infinite: false
+      });
+    }
+  }
 
 })(jQuery); // Fully reference jQuery after this point.

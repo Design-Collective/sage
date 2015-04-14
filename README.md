@@ -1,6 +1,11 @@
 # [Sage](https://roots.io/sage/) Fork Starter Project
 [![devDependency Status](https://david-dm.org/roots/sage/dev-status.svg)](https://david-dm.org/roots/sage#info=devDependencies)
 
+## To-do
+
+* Include Bootstrap-Select as .js dependency into assets/manifest.json
+* Include Slick.js as .js build dependency into assets/manifest.json
+
 ## Developer Quick Start
 
 1. If you have not yet done so, setup a [Design-Collective/DCWP](https://github.com/Design-Collective/dcwp) project and remote repo.
