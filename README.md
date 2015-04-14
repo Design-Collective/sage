@@ -5,6 +5,7 @@
 
 * Include Bootstrap-Select as .js dependency into assets/manifest.json
 * Include Slick.js as .js build dependency into assets/manifest.json
+* Create hero unit slide template (using Slick.js)
 
 ## Developer Quick Start
 
