@@ -26,12 +26,17 @@
 5. Commit your changes: `git commit -am "Added theme"`
 6. Push your local repo to the remote repository: `git push origin master`
 
-## Install local dependecies
+### Install local dependecies
 
   * Run `npm install`
   * Run `bower install`
 
 See [Theme development](#theme-development) for more information
+
+### Install local dependecies
+
+Develop your theme with `gulp watch`.
+Build with `gulp build`
 
 
 ## Requirements
