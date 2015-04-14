@@ -59,5 +59,8 @@
         "./assets/fonts/bootstrap/glyphicons-halflings-regular.woff2"
       ]
     }
+  },
+  "devDependencies": {
+    "Responsive-Alignment-for-Bootstrap": "calebzahnd/Responsive-Alignment-for-Bootstrap"
   }
 }
