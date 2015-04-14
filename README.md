@@ -12,7 +12,7 @@
 3. Setup versioning of theme folder within main repo:
   * Go to the theme's folder: `cd mytheme`
   * Remove the `.git` folder from the theme: `rm -rf .git`
-  * Add the entire theme folder to your repository: `git add mytheme`
+  * Add the entire theme folder to your repository: `git add .`
 4. Set theme name and screenshot:
   * Update the theme name and information in the `style.css`
   * Update the `screenshot.png` file (880px x 660px)
