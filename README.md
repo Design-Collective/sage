@@ -8,6 +8,8 @@
 
 ## Developer Quick Start
 
+### Theme Setup
+
 1. If you have not yet done so, setup a [Design-Collective/DCWP](https://github.com/Design-Collective/dcwp) project and remote repo.
 2. Install this starter theme:
   * Go to your project's folder `cd myproject`
@@ -23,6 +25,8 @@
   * Update the `screenshot.png` file (880px x 660px)
 5. Commit your changes: `git commit -am "Added theme"`
 6. Push your local repo to the remote repository: `git push origin master`
+
+### Theme Setup
 
 ## Requirements
 
@@ -60,7 +64,9 @@ Features inherited from Sage:
 
 ## Important files
 
-
+* `assets/styles/_variables.scss` Main bootstrap / theme SCSS variables
+* `assets/mainfest.json` Use with Manifest Builder
+* `functions.php` To add your own PHP script file (under `/lib`)
 
 
 ## Configuration
