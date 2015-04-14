@@ -26,7 +26,13 @@
 5. Commit your changes: `git commit -am "Added theme"`
 6. Push your local repo to the remote repository: `git push origin master`
 
-### Theme Setup
+## Install local dependecies
+
+  * Run `npm install`
+  * Run `bower install`
+
+See [Theme development](#theme-development) for more information
+
 
 ## Requirements
 
