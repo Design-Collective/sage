@@ -1,15 +1,22 @@
-# [Sage](https://roots.io/sage/)
-[![Build Status](https://travis-ci.org/roots/sage.svg)](https://travis-ci.org/roots/sage)
+# [Sage](https://roots.io/sage/) Fork Starter Project
 [![devDependency Status](https://david-dm.org/roots/sage/dev-status.svg)](https://david-dm.org/roots/sage#info=devDependencies)
 
-Sage is a WordPress starter theme based on HTML5 Boilerplate, gulp, Bower, and Bootstrap, that will help you make better themes.
+## Developer Quick Start
 
-* Source: [https://github.com/roots/sage](https://github.com/roots/sage)
-* Homepage: [https://roots.io/sage/](https://roots.io/sage/)
-* Documentation: [https://roots.io/sage/docs/](https://roots.io/sage/docs/)
-* Twitter: [@rootswp](https://twitter.com/rootswp), [@retlehs](https://twitter.com/retlehs), [@swalkinshaw](https://twitter.com/swalkinshaw), [@Foxaii](https://twitter.com/Foxaii), [@c2foryou](https://twitter.com/c2foryou), [@austinpray](https://twitter.com/austinpray)
-* Newsletter: [Subscribe](http://roots.io/subscribe/)
-* Forum: [https://discourse.roots.io/](https://discourse.roots.io/)
+1. If you have not yet done so, setup a [Design-Collective/DCWP](https://github.com/Design-Collective/dcwp) project and remote repo.
+2. Install this starter theme:
+  * Go to your project's folder `cd myproject`
+  * Go to the themes folder: `cd web/app/themes`
+  * Clone this starter theme:
+    `curl https://github.com/Design-Collective/sage mytheme`
+  * Go to the theme's folder: `cd mytheme`
+  * Remove the `.git` folder from the theme: `rm -rf .git`
+  * Add the entire theme folder to your repository: `git add mytheme`
+3. Set theme name and screenshot:
+  * Update the theme name and information in the `style.css`
+  * Update the `screenshot.png` file (880px x 660px)
+4. Commit your changes: `git commit -am "Added theme"`
+5. Push your local repo to the remote repository: `git push origin master`
 
 ## Requirements
 
@@ -24,6 +31,11 @@ For more installation notes, refer to the [Install gulp and Bower](#install-gulp
 
 ## Features
 
+Custom features:
+* [Responsive-Alignment-for-Bootstrap](https://github.com/calebzahnd/Responsive-Alignment-for-Bootstrap) Responsive align classes for Bootstrap
+* 
+
+Features inherited from Sage:
 * [gulp](http://gulpjs.com/) build script that compiles both Less and Sass, checks for JavaScript errors, optimizes images, and concatenates and minifies files
 * [BrowserSync](http://www.browsersync.io/) for keeping multiple browsers and devices synchronized while testing, along with injecting updated CSS and JS into your browser while you're developing
 * [Bower](http://bower.io/) for front-end package management
@@ -38,21 +50,10 @@ For more installation notes, refer to the [Install gulp and Bower](#install-gulp
 * Posts use the [hNews](http://microformats.org/wiki/hnews) microformat
 * [Multilingual ready](https://roots.io/wpml/) and over 30 available [community translations](https://github.com/roots/sage-translations)
 
-Install the [Soil](https://github.com/roots/soil) plugin to enable additional features:
+## Important files
 
-* Cleaner output of `wp_head` and enqueued assets
-* Root relative URLs
-* Nice search (`/search/query/`)
 
-## Installation
 
-Clone the git repo - `git clone https://github.com/roots/sage.git` and then rename the directory to the name of your theme or website.
-
-If you don't use [Bedrock](https://github.com/roots/bedrock), you'll need to add the following to your `wp-config.php` on your development installation:
-
-```php
-define('WP_ENV', 'development');
-```
 
 ## Configuration
 
@@ -106,16 +107,3 @@ If your local develoment URL looks like `http://localhost:8888/project-name/` yo
 ## Documentation
 
 Sage documentation is available at [https://roots.io/sage/docs/](https://roots.io/sage/docs/).
-
-## Contributing
-
-Contributions are welcome from everyone. We have [contributing guidelines](CONTRIBUTING.md) to help you get started.
-
-## Community
-
-Keep track of development and community news.
-
-* Participate on the [Roots Discourse](https://discourse.roots.io/)
-* Follow [@rootswp on Twitter](https://twitter.com/rootswp)
-* Read and subscribe to the [Roots Blog](https://roots.io/blog/)
-* Subscribe to the [Roots Newsletter](https://roots.io/subscribe/)
