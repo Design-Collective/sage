@@ -107,3 +107,14 @@ If your local develoment URL looks like `http://localhost:8888/project-name/` yo
 ## Documentation
 
 Sage documentation is available at [https://roots.io/sage/docs/](https://roots.io/sage/docs/).
+
+## Updates to starter theme (core only)
+
+If you plan to merge/update this repo from [Roots/Sage](https://roots.io/sage/), you will need to setup the `upstream` remote in order to merge/update from upstream.
+
+Run the following commands:
+  * `git remote add upstream https://github.com/roots/sage`
+  * `git fetch upstream`
+  Commits to the remote master will be stored in a local branch, upstream/master.
+  * Checkout local master branch: `git checkout master`
+  * Merge upstream/master branch to sync with upstream: `git merge upstream/master`
