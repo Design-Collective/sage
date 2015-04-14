@@ -2,6 +2,9 @@
 
 // bower:scss
 @import "../../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+@import "../../bower_components/bourbon/app/assets/stylesheets/_bourbon.scss";
 // endbower
 
-@import "../../bower_components/Responsive-Alignment-for-Bootstrap/scss/responsive-alignment";
+@import "../../bower_components/Responsive-Alignment-for-Bootstrap/scss/responsive-alignment";	// Responsive Align Classes
+@import "components/_bootstrap-select";     // Bootstrap dropdown select
+@import "components/_slick";                // Slick carousel
