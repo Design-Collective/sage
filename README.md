@@ -58,6 +58,8 @@ Custom features:
 * [Advanced Custom Fields](http://www.advancedcustomfields.com/resources) (Plugin)
 * [Bootstrap-Sass-Official](http://badge.fury.io/bo/bootstrap-sass) (Bower)
 * [Bourbon](https://github.com/thoughtbot/bourbon) (Bower) Slim awesome bunch of mixins. For documentation, see [http://bourbon.io/docs/](http://bourbon.io/docs/)
+* [Slick](https://github.com/kenwheeler/slick/) (Bower) JS slider
+* [Bootstrap-Select](https://github.com/silviomoreto/bootstrap-select) (Bower)
 
 Features inherited from Sage:
 * [gulp](http://gulpjs.com/) build script that compiles both Less and Sass, checks for JavaScript errors, optimizes images, and concatenates and minifies files
