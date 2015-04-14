@@ -9,14 +9,15 @@
   * Go to the themes folder: `cd web/app/themes`
   * Clone this starter theme:
     `curl https://github.com/Design-Collective/sage mytheme`
+3. Setup versioning of theme folder within main repo:
   * Go to the theme's folder: `cd mytheme`
   * Remove the `.git` folder from the theme: `rm -rf .git`
   * Add the entire theme folder to your repository: `git add mytheme`
-3. Set theme name and screenshot:
+4. Set theme name and screenshot:
   * Update the theme name and information in the `style.css`
   * Update the `screenshot.png` file (880px x 660px)
-4. Commit your changes: `git commit -am "Added theme"`
-5. Push your local repo to the remote repository: `git push origin master`
+5. Commit your changes: `git commit -am "Added theme"`
+6. Push your local repo to the remote repository: `git push origin master`
 
 ## Requirements
 
