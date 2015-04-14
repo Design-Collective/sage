@@ -34,7 +34,9 @@ For more installation notes, refer to the [Install gulp and Bower](#install-gulp
 
 Custom features:
 * [Responsive-Alignment-for-Bootstrap](https://github.com/calebzahnd/Responsive-Alignment-for-Bootstrap) Responsive align classes for Bootstrap
-* 
+* [Advanced Custom Fields](http://www.advancedcustomfields.com/resources) (Plugin)
+* [Bootstrap-Sass-Official](http://badge.fury.io/bo/bootstrap-sass) (Bower)
+*
 
 Features inherited from Sage:
 * [gulp](http://gulpjs.com/) build script that compiles both Less and Sass, checks for JavaScript errors, optimizes images, and concatenates and minifies files
